@@ -1,0 +1,136 @@
+﻿2026-07-16T07:41:26.6591509Z Current runner version: '2.335.1'
+2026-07-16T07:41:26.6615015Z ##[group]Runner Image Provisioner
+2026-07-16T07:41:26.6615897Z Hosted Compute Agent
+2026-07-16T07:41:26.6616422Z Version: 20260624.560
+2026-07-16T07:41:26.6616970Z Commit: 925d229a51159bc391ae97e54a2dd1fe20af789d
+2026-07-16T07:41:26.6617657Z Build Date: 2026-06-24T18:26:47Z
+2026-07-16T07:41:26.6618272Z Worker ID: {720ab640-ac99-4793-9fcf-be7d79bc2721}
+2026-07-16T07:41:26.6618935Z Azure Region: westus3
+2026-07-16T07:41:26.6619450Z ##[endgroup]
+2026-07-16T07:41:26.6621042Z ##[group]Operating System
+2026-07-16T07:41:26.6621678Z Ubuntu
+2026-07-16T07:41:26.6622139Z 24.04.4
+2026-07-16T07:41:26.6622590Z LTS
+2026-07-16T07:41:26.6623077Z ##[endgroup]
+2026-07-16T07:41:26.6623563Z ##[group]Runner Image
+2026-07-16T07:41:26.6624104Z Image: ubuntu-24.04
+2026-07-16T07:41:26.6624768Z Version: 20260705.232.1
+2026-07-16T07:41:26.6625881Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260705.232/images/ubuntu/Ubuntu2404-Readme.md
+2026-07-16T07:41:26.6627285Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260705.232
+2026-07-16T07:41:26.6628120Z ##[endgroup]
+2026-07-16T07:41:26.6629220Z ##[group]GITHUB_TOKEN Permissions
+2026-07-16T07:41:26.6631330Z Contents: read
+2026-07-16T07:41:26.6631928Z Metadata: read
+2026-07-16T07:41:26.6632680Z Pages: write
+2026-07-16T07:41:26.6633211Z ##[endgroup]
+2026-07-16T07:41:26.6635407Z Secret source: Actions
+2026-07-16T07:41:26.6636402Z Prepare workflow directory
+2026-07-16T07:41:26.6937079Z Prepare all required actions
+2026-07-16T07:41:26.6974056Z Getting action download info
+2026-07-16T07:41:27.0422960Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-07-16T07:41:27.1037856Z Download action repository 'actions/configure-pages@v5' (SHA:983d7736d9b0ae728b81ab479565c72886d7745b)
+2026-07-16T07:41:27.7148818Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+2026-07-16T07:41:27.9439077Z Download action repository 'actions/deploy-pages@v4' (SHA:d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e)
+2026-07-16T07:41:29.1115601Z Getting action download info
+2026-07-16T07:41:29.2355208Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-07-16T07:41:29.3544026Z Complete job name: deploy
+2026-07-16T07:41:29.4391551Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-16T07:41:29.4401038Z ##[group]Run actions/checkout@v4
+2026-07-16T07:41:29.4402052Z with:
+2026-07-16T07:41:29.4402783Z   repository: EACSecretariat/statistics
+2026-07-16T07:41:29.4410522Z   token: ***
+2026-07-16T07:41:29.4411210Z   ssh-strict: true
+2026-07-16T07:41:29.4411933Z   ssh-user: git
+2026-07-16T07:41:29.4412690Z   persist-credentials: true
+2026-07-16T07:41:29.4413478Z   clean: true
+2026-07-16T07:41:29.4414218Z   sparse-checkout-cone-mode: true
+2026-07-16T07:41:29.4415319Z   fetch-depth: 1
+2026-07-16T07:41:29.4416033Z   fetch-tags: false
+2026-07-16T07:41:29.4416776Z   show-progress: true
+2026-07-16T07:41:29.4417508Z   lfs: false
+2026-07-16T07:41:29.4418255Z   submodules: false
+2026-07-16T07:41:29.4418996Z   set-safe-directory: true
+2026-07-16T07:41:29.4420089Z ##[endgroup]
+2026-07-16T07:41:29.5417103Z Syncing repository: EACSecretariat/statistics
+2026-07-16T07:41:29.5421283Z ##[group]Getting Git version info
+2026-07-16T07:41:29.5423258Z Working directory is '/home/runner/work/statistics/statistics'
+2026-07-16T07:41:29.5426316Z [command]/usr/bin/git version
+2026-07-16T07:41:29.5449117Z git version 2.54.0
+2026-07-16T07:41:29.5470849Z ##[endgroup]
+2026-07-16T07:41:29.5486311Z Temporarily overriding HOME='/home/runner/work/_temp/3b635da1-0698-4deb-8a44-43f5bd3e5e2b' before making global git config changes
+2026-07-16T07:41:29.5490314Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-16T07:41:29.5492957Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/statistics/statistics
+2026-07-16T07:41:29.5543052Z Deleting the contents of '/home/runner/work/statistics/statistics'
+2026-07-16T07:41:29.5548494Z ##[group]Initializing the repository
+2026-07-16T07:41:29.5555017Z [command]/usr/bin/git init /home/runner/work/statistics/statistics
+2026-07-16T07:41:29.5654637Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-07-16T07:41:29.5657543Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-07-16T07:41:29.5660349Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-07-16T07:41:29.5662491Z hint: call:
+2026-07-16T07:41:29.5663656Z hint:
+2026-07-16T07:41:29.5665270Z hint: 	git config --global init.defaultBranch <name>
+2026-07-16T07:41:29.5666957Z hint:
+2026-07-16T07:41:29.5668773Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-07-16T07:41:29.5671437Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-07-16T07:41:29.5673654Z hint:
+2026-07-16T07:41:29.5675709Z hint: 	git branch -m <name>
+2026-07-16T07:41:29.5677087Z hint:
+2026-07-16T07:41:29.5678952Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-07-16T07:41:29.5682235Z Initialized empty Git repository in /home/runner/work/statistics/statistics/.git/
+2026-07-16T07:41:29.5692557Z [command]/usr/bin/git remote add origin https://github.com/EACSecretariat/statistics
+2026-07-16T07:41:29.5732356Z ##[endgroup]
+2026-07-16T07:41:29.5733793Z ##[group]Disabling automatic garbage collection
+2026-07-16T07:41:29.5736620Z [command]/usr/bin/git config --local gc.auto 0
+2026-07-16T07:41:29.5765788Z ##[endgroup]
+2026-07-16T07:41:29.5768190Z ##[group]Setting up auth
+2026-07-16T07:41:29.5770631Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-16T07:41:29.5800319Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-16T07:41:29.6127026Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-16T07:41:29.6177131Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-16T07:41:29.6369017Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-16T07:41:29.6402545Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-16T07:41:29.6569748Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-07-16T07:41:29.6598888Z ##[endgroup]
+2026-07-16T07:41:29.6600929Z ##[group]Fetching the repository
+2026-07-16T07:41:29.6611811Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e06b6813d11e48d8fc85cc2a95aa664896463d41:refs/remotes/origin/main
+2026-07-16T07:41:30.5234809Z From https://github.com/EACSecretariat/statistics
+2026-07-16T07:41:30.5235804Z  * [new ref]         e06b6813d11e48d8fc85cc2a95aa664896463d41 -> origin/main
+2026-07-16T07:41:30.5265906Z ##[endgroup]
+2026-07-16T07:41:30.5266605Z ##[group]Determining the checkout info
+2026-07-16T07:41:30.5267589Z ##[endgroup]
+2026-07-16T07:41:30.5273620Z [command]/usr/bin/git sparse-checkout disable
+2026-07-16T07:41:30.5311308Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-07-16T07:41:30.5334125Z ##[group]Checking out the ref
+2026-07-16T07:41:30.5339413Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-07-16T07:41:30.5574209Z Switched to a new branch 'main'
+2026-07-16T07:41:30.5575406Z branch 'main' set up to track 'origin/main'.
+2026-07-16T07:41:30.5580720Z ##[endgroup]
+2026-07-16T07:41:30.5614778Z [command]/usr/bin/git log -1 --format=%H
+2026-07-16T07:41:30.5634446Z e06b6813d11e48d8fc85cc2a95aa664896463d41
+2026-07-16T07:41:30.5805401Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-16T07:41:30.5806899Z ##[group]Run actions/configure-pages@v5
+2026-07-16T07:41:30.5807166Z with:
+2026-07-16T07:41:30.5809747Z   token: ***
+2026-07-16T07:41:30.5809950Z   enablement: false
+2026-07-16T07:41:30.5810152Z ##[endgroup]
+2026-07-16T07:41:31.0373330Z ##[error]Get Pages site failed. Please verify that the repository has Pages enabled and configured to build using GitHub Actions, or consider exploring the `enablement` parameter for this action. Error: Not Found - https://docs.github.com/rest/pages/pages#get-a-apiname-pages-site
+2026-07-16T07:41:31.0386460Z ##[error]HttpError: Not Found - https://docs.github.com/rest/pages/pages#get-a-apiname-pages-site
+2026-07-16T07:41:31.0549653Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-16T07:41:31.0550808Z Post job cleanup.
+2026-07-16T07:41:31.1405086Z [command]/usr/bin/git version
+2026-07-16T07:41:31.1440408Z git version 2.54.0
+2026-07-16T07:41:31.1493818Z Temporarily overriding HOME='/home/runner/work/_temp/446c7522-a700-4a94-adc5-c4d9d393afe7' before making global git config changes
+2026-07-16T07:41:31.1525604Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-16T07:41:31.1526946Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/statistics/statistics
+2026-07-16T07:41:31.1537231Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-16T07:41:31.1541275Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-16T07:41:31.1756946Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-16T07:41:31.1780523Z http.https://github.com/.extraheader
+2026-07-16T07:41:31.1791912Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-07-16T07:41:31.1820479Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-16T07:41:31.2008363Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-16T07:41:31.2035927Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-16T07:41:31.2423467Z Evaluate and set environment url
+2026-07-16T07:41:31.2430475Z Evaluated environment url: 
+2026-07-16T07:41:31.2431464Z Cleaning up orphan processes
+2026-07-16T07:41:31.2654125Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

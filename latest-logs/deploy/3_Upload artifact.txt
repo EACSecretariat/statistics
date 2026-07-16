@@ -1,0 +1,67 @@
+﻿2026-07-16T07:45:28.2707301Z ##[group]Run actions/upload-pages-artifact@v3
+2026-07-16T07:45:28.2708169Z with:
+2026-07-16T07:45:28.2708804Z   path: .
+2026-07-16T07:45:28.2709386Z   name: github-pages
+2026-07-16T07:45:28.2710040Z   retention-days: 1
+2026-07-16T07:45:28.2710709Z ##[endgroup]
+2026-07-16T07:45:28.2816405Z ##[group]Run echo ::group::Archive artifact
+2026-07-16T07:45:28.2817422Z [36;1mecho ::group::Archive artifact[0m
+2026-07-16T07:45:28.2818214Z [36;1mtar \[0m
+2026-07-16T07:45:28.2818951Z [36;1m  --dereference --hard-dereference \[0m
+2026-07-16T07:45:28.2819818Z [36;1m  --directory "$INPUT_PATH" \[0m
+2026-07-16T07:45:28.2820660Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2026-07-16T07:45:28.2821524Z [36;1m  --exclude=.git \[0m
+2026-07-16T07:45:28.2822536Z [36;1m  --exclude=.github \[0m
+2026-07-16T07:45:28.2823254Z [36;1m  .[0m
+2026-07-16T07:45:28.2823931Z [36;1mecho ::endgroup::[0m
+2026-07-16T07:45:28.2873136Z shell: /usr/bin/sh -e {0}
+2026-07-16T07:45:28.2874017Z env:
+2026-07-16T07:45:28.2874600Z   INPUT_PATH: .
+2026-07-16T07:45:28.2875353Z ##[endgroup]
+2026-07-16T07:45:28.2943566Z ##[group]Archive artifact
+2026-07-16T07:45:28.2952002Z ./
+2026-07-16T07:45:28.2953053Z ./index.html
+2026-07-16T07:45:28.2953896Z ./_index.html
+2026-07-16T07:45:28.2954811Z ./MFS/
+2026-07-16T07:45:28.2955699Z ./MFS/EAC_MFS_Course.html
+2026-07-16T07:45:28.2956709Z ./README.md
+2026-07-16T07:45:28.2957630Z ./FSI/
+2026-07-16T07:45:28.2958491Z ./FSI/EAC_FSI_Course.html
+2026-07-16T07:45:28.2959417Z ./ESS/
+2026-07-16T07:45:28.2960307Z ./ESS/EAC_ESS_BOP_IIP_Course.html
+2026-07-16T07:45:28.2961317Z ./images/
+2026-07-16T07:45:28.2962386Z ./images/eac-logo.png
+2026-07-16T07:45:28.2963377Z ./images/eac_logo.png
+2026-07-16T07:45:28.2964315Z ./GFS/
+2026-07-16T07:45:28.2965190Z ./GFS/EAC_PSDS_Course.html
+2026-07-16T07:45:28.2966138Z ./GFS/EAC_GFS_Course.html
+2026-07-16T07:45:28.2967140Z ./Poverty/
+2026-07-16T07:45:28.2968098Z ./Poverty/EAC_Poverty_Statistics_Course.html
+2026-07-16T07:45:28.2970896Z ./Agriculture/
+2026-07-16T07:45:28.2972038Z ./Agriculture/EAC_FNS_Course.html
+2026-07-16T07:45:28.2976862Z ##[endgroup]
+2026-07-16T07:45:28.3093939Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-16T07:45:28.3097476Z ##[group]Run actions/upload-artifact@v4
+2026-07-16T07:45:28.3098259Z with:
+2026-07-16T07:45:28.3098873Z   name: github-pages
+2026-07-16T07:45:28.3099590Z   path: /home/runner/work/_temp/artifact.tar
+2026-07-16T07:45:28.3100391Z   retention-days: 1
+2026-07-16T07:45:28.3101080Z   if-no-files-found: error
+2026-07-16T07:45:28.3101925Z   compression-level: 6
+2026-07-16T07:45:28.3102667Z   overwrite: false
+2026-07-16T07:45:28.3103322Z   include-hidden-files: false
+2026-07-16T07:45:28.3104011Z ##[endgroup]
+2026-07-16T07:45:28.4275406Z (node:2083) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-16T07:45:28.4277380Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-16T07:45:28.4308632Z With the provided path, there will be 1 file uploaded
+2026-07-16T07:45:28.4310878Z Artifact name is valid!
+2026-07-16T07:45:28.4312187Z Root directory input is valid!
+2026-07-16T07:45:28.6550971Z Beginning upload of artifact content to blob storage
+2026-07-16T07:45:28.7593651Z (node:2083) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-07-16T07:45:29.1148140Z Uploaded bytes 2109876
+2026-07-16T07:45:29.1542160Z Finished uploading artifact content to blob storage!
+2026-07-16T07:45:29.1543429Z SHA256 digest of uploaded artifact zip is 4100a95ac16bceacf19247e9afdec1aa0f78ebe852700bc3bc78deeb3172f9ff
+2026-07-16T07:45:29.1544443Z Finalizing artifact upload
+2026-07-16T07:45:29.3496911Z Artifact github-pages.zip successfully finalized. Artifact ID 8368468669
+2026-07-16T07:45:29.3498066Z Artifact github-pages has been successfully uploaded! Final size is 2109876 bytes. Artifact ID is 8368468669
+2026-07-16T07:45:29.3512927Z Artifact download URL: https://github.com/EACSecretariat/statistics/actions/runs/29481004373/artifacts/8368468669

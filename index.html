@@ -209,7 +209,6 @@
         <h3>East African Community E-Learning Portal:</h3>
         <select name="domains" id="domain-select" onchange="handleDomainChange(this.value)">
             <option value="">--Please choose a Sector--</option>
-            <option value="agr">Food and Nutrition Security (FNS)</option>
             <option value="fsi">Financial Sector Indicators (FSI)</option>
             <option value="gfs">Government Finance Statistics (GFS)</option>
             <option value="psds">Public Sector Debt Statistics (PSDS)</option>
@@ -224,7 +223,6 @@
     <!-- SIDEBAR NAVIGATION -->
     <nav class="sidebar" id="sidebar">
         <h2>Course Modules</h2>
-        <a href="Agriculture/EAC_FNS_Course.html" target="contentFrame" class="active">Food and Nutrition Security (FNS)</a>
         <a href="FSI/EAC_FSI_Course.html" target="contentFrame" class="active">Financial Sector Indicators (FSI)</a>
         <a href="GFS/EAC_GFS_Course.html" target="contentFrame">Government Finance Statistics (GFS)</a>
         <a href="GFS/EAC_PSDS_Course.html" target="contentFrame">Public Sector Debt Statistics (PSDS)</a>
@@ -292,7 +290,6 @@ function handleDomainChange(selectedValue) {
     if (!selectedValue) return;
 
     const domainUrls = {        
-        agr: "Agriculture/EAC_FNS_Course.html",
         fsi: "FSI/EAC_FSI_Course.html",
         gfs: "GFS/EAC_GFS_Course.html",
         psds: "GFS/EAC_PSDS_Course.html",

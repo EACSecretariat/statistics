@@ -1,0 +1,28 @@
+﻿2026-07-16T07:45:29.3651048Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-16T07:45:29.3652313Z ##[group]Run actions/deploy-pages@v4
+2026-07-16T07:45:29.3652621Z with:
+2026-07-16T07:45:29.3654643Z   token: ***
+2026-07-16T07:45:29.3654885Z   timeout: 600000
+2026-07-16T07:45:29.3655144Z   error_count: 10
+2026-07-16T07:45:29.3655399Z   reporting_interval: 5000
+2026-07-16T07:45:29.3655668Z   artifact_name: github-pages
+2026-07-16T07:45:29.3655979Z   preview: false
+2026-07-16T07:45:29.3656222Z ##[endgroup]
+2026-07-16T07:45:29.4898698Z (node:2095) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-16T07:45:29.6600721Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-16T07:45:29.6623691Z Fetching artifact metadata for "github-pages" in this workflow run
+2026-07-16T07:45:29.8037063Z Found 1 artifact(s)
+2026-07-16T07:45:29.8046258Z Creating Pages deployment with payload:
+2026-07-16T07:45:29.8046774Z {
+2026-07-16T07:45:29.8047105Z 	"artifact_id": 8368468669,
+2026-07-16T07:45:29.8047480Z 	"pages_build_version": "7a789230f3963c7dde26d8937d5f7d2a721af6ec",
+2026-07-16T07:45:29.8068427Z 	"oidc_token": "***"
+2026-07-16T07:45:29.8068676Z }
+2026-07-16T07:45:30.0057121Z ##[error]Creating Pages deployment failed
+2026-07-16T07:45:30.0072355Z ##[error]HttpError: Not Found
+    at /home/runner/work/_actions/actions/deploy-pages/v4/node_modules/@octokit/request/dist-node/index.js:124:1
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at createPagesDeployment (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:125:1)
+    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:74:1)
+    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)
+2026-07-16T07:45:30.0077566Z ##[error]Error: Failed to create deployment (status: 404) with build version 7a789230f3963c7dde26d8937d5f7d2a721af6ec. Request ID 8C10:11C510:14B60D8:4968817:6A588C19 Ensure GitHub Pages has been enabled: https://github.com/EACSecretariat/statistics/settings/pages
